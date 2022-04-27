@@ -11,14 +11,16 @@ test_driver.get('https://vlogtruyen.net')
 
 
 #Step 2: Bấm vào button "Đăng nhập"
-test_driver.find_element(By.CSS_SELECTOR, '#btnLogin').click()
+test_driver.find_element(By.CSS_SELECTOR, '#qsearch').send_keys('Để có thể sống sót')
 
 test_driver.implicitly_wait(4)
 
 #Step 3: Bấm vào button "Đăng nhập"
-test_driver.find_element(By.XPATH, '/html/body/div[8]/div/div[2]/div[2]/form[1]/div[3]/button').click()
+
+
+test_driver.find_element(By.XPATH, '/html/body/div[1]/div/nav/div[2]/div/form/div[1]/div[2]/button/i').click()
 
 
 
 #tắt testcase
-test_driver.quit()
+# test_driver.quit()

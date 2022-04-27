@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By             #TV2
 
 driver = webdriver.Chrome()
 
-driver.get("https://motphimtv.tv/")
+driver.get("https://vnexpress.net")
 
 
 # driver.implicitly_wait(1.5) #chờ ngầm định đề phòng mạng chậm load không nổi
