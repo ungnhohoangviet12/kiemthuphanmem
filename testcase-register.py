@@ -31,6 +31,5 @@ test_driver.find_element(By.CSS_SELECTOR, '#recaptcha-anchor > div.recaptcha-che
 
 
 
-#tắt testcase
-# test_driver.close()
-# test_driver.quit()
+
+test_driver.close()
