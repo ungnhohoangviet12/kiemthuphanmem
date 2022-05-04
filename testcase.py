@@ -13,12 +13,12 @@ driver.get("https://vnexpress.net")
 testXpath = driver.find_elements(By.XPATH, '/html/body/section[5]/div/div[1]/article')
 for testXpaths in testXpath:
     try:
-        Tieu_De = testXpaths.find_element(By.TAG_NAME, 'h3').text
-        Mieu_Ta = testXpaths.find_element(By.TAG_NAME, "p").text
-        Link_BaiViet = testXpaths.find_element(By.XPATH, 'h3/a').get_attribute('href')
-        print(Tieu_De)
-        print(Mieu_Ta)
-        print(Link_BaiViet)
+        tieude = testXpaths.find_element(By.TAG_NAME, 'h3').text
+        mieuta = testXpaths.find_element(By.TAG_NAME, "p").text
+        linkbaiviet = testXpaths.find_element(By.XPATH, 'h3/a').get_attribute('href')
+        print(tieude)
+        print(mieuta)
+        print(linkbaiviet)
         print('=======================')
     except NoSuchElementException:
         print('Error ko hiện thông tin')
